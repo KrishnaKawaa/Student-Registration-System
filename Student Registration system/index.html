@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A user-friendly student registration system to manage student data efficiently and securely.">
+    <meta name="keywords" content="student registration, registration system, student management, online registration">
+    <meta name="author" content="Your Name or Organization">
+    <meta name="robots" content="index, follow">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="index.css" >
+</head>
+<body>
+
+    <!-- Header and Description -->
+    <header>
+        <div id="header">
+            <h1 id="heading"><u>Enrollly: Modernize Your Student Registration Process</u></h1>
+        </div>
+        <div id="description">
+            <p> Description:   
+                The  Student Registration System  is a web-based application designed to streamline the process of enrolling and managing student information. It allows administrators to securely collect, organize, and update student data while providing an intuitive interface for students to register. Features include user authentication, form validation, real-time data updates, and customizable reports, ensuring efficiency and reliability in academic administration.</p>
+        </div>
+    </header>
+
+<!-- Registration form section! -->
+    <section class="form">
+        <div >
+            <form>
+                <label for="studentName">Student Name</label><br>
+                <input type="text" id="studentName" placeholder="Enter your name"><br>
+            
+                <label for="studentId">Student ID</label><br>
+                <input type="text" id="studentId" placeholder="Enter your ID"><br>
+            
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email"><br>
+            
+                <label for="contact">Contact no. </label><br>
+                <input type="number" id="contact" placeholder="Enter your contact number"><br>
+                
+                <button type="submit" >Add</button>
+            </form>
+            
+            
+        </div>
+        
+    </section>
+
+    <!-- list of students in the form of table -->
+    <section class="list">
+        <div class="table-container">
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Number</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>

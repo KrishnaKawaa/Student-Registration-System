@@ -1,0 +1,122 @@
+body{
+    display:grid;
+    gap: 5px;
+    padding:10px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(2,1fr);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    grid-column: 1 /span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    padding: 5%;
+    margin-bottom: 5px;
+}
+
+#heading{
+    font-size: 300%;
+}
+
+
+/* creating background using css conic gradient*/
+html {
+    --s: 50px; /* control the size */
+    
+    --g:conic-gradient(at 90% 40%,#0000 75%,#774F38 0);
+    background: var(--g),var(--g) var(--s) var(--s) #F1D4AF;
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+    }
+
+
+    /* css for form section */
+    form {
+        background-color: wheat;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #f4f4f4;
+        transition: border-color 0.3s;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus {
+        border-color: #007bff;
+        outline: none;
+        background-color: #ffffff;
+    }
+    input::placeholder {
+        color: #aaa;
+    }
+    input:focus::placeholder {
+        color: #ddd;
+    }
+
+button{
+    color: black;
+    padding: 2% 5%;
+    border-radius: 25%;
+    background-color: whitesmoke;
+    border-width: 1px;
+    border-color: black;
+    margin-top: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+button:hover{
+    opacity: 0.5;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* css for table section */
+
+.table th,
+.table td {
+    border: 1px solid #ddd; 
+    padding: 10px;
+    text-align: left; 
+}
+
+.table th {
+    background-color: #f4f4f4; 
+    position: sticky; /* Make headers sticky when scrolling */
+    top: 0; 
+    z-index: 1; 
+}
+.table-container {
+    max-height: 400px; 
+    overflow-y: scroll; /* Enable vertical scrolling */
+    border: 1px solid black; 
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: wheat;
+}
